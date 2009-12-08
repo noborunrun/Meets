@@ -11,7 +11,7 @@
 #define kSessionID @"_Meets.app"
 
 @implementation NYManageBT
-@synthesize _sendData;
+@synthesize _sendData,delegate;
 
 +(void)startBTSessionWithData:(NSDictionary *)sendData{
 	_sendData = sendData;

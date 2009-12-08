@@ -12,7 +12,8 @@
 @interface NYManageBT : UIView <GKSessionDelegate>{
 	GKSession *mySession;
 	NSDictionary *_sendData;
+	id delegate;
 }
 @property (nonatomic, retain) NSDictionary *_sendData;
-
+@property (nonatomic, retain) id delegate;
 @end

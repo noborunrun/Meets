@@ -14,6 +14,11 @@
 		282CCBFE0DB6C98000C4EA27 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 282CCBFD0DB6C98000C4EA27 /* SecondView.xib */; };
 		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
 		28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD73870D9D96C1002E5188 /* MainWindow.xib */; };
+		FA488FDA10CE21D000F30A6C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA488FD910CE21D000F30A6C /* CoreData.framework */; };
+		FA488FDE10CE223500F30A6C /* Meets.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = FA488FDD10CE223500F30A6C /* Meets.xcdatamodel */; };
+		FA488FE410CE2AB300F30A6C /* SetPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA488FE210CE2AB300F30A6C /* SetPasscodeViewController.m */; };
+		FA488FE510CE2AB300F30A6C /* SetPasscodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA488FE310CE2AB300F30A6C /* SetPasscodeViewController.xib */; };
+		FA488FFC10CE2E9400F30A6C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA488FFB10CE2E9400F30A6C /* icon.png */; };
 		FA5B7E8B10CC8A7A009406A8 /* NYManageBT.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5B7E8A10CC8A7A009406A8 /* NYManageBT.m */; };
 		FA5B7E8D10CC8AC4009406A8 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5B7E8C10CC8AC4009406A8 /* GameKit.framework */; };
 		FA5B7EE610CCC919009406A8 /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5B7EE510CCC919009406A8 /* ListView.m */; };
@@ -33,6 +38,12 @@
 		28AD73870D9D96C1002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Meets-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Meets-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		FA488FD910CE21D000F30A6C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FA488FDD10CE223500F30A6C /* Meets.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Meets.xcdatamodel; sourceTree = "<group>"; };
+		FA488FE110CE2AB300F30A6C /* SetPasscodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetPasscodeViewController.h; sourceTree = "<group>"; };
+		FA488FE210CE2AB300F30A6C /* SetPasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetPasscodeViewController.m; sourceTree = "<group>"; };
+		FA488FE310CE2AB300F30A6C /* SetPasscodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SetPasscodeViewController.xib; path = Classes/SetPasscodeViewController.xib; sourceTree = "<group>"; };
+		FA488FFB10CE2E9400F30A6C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		FA5B7E8910CC8A7A009406A8 /* NYManageBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYManageBT.h; sourceTree = "<group>"; };
 		FA5B7E8A10CC8A7A009406A8 /* NYManageBT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYManageBT.m; sourceTree = "<group>"; };
 		FA5B7E8C10CC8AC4009406A8 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
@@ -52,6 +63,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
 				FA5B7E8D10CC8AC4009406A8 /* GameKit.framework in Frameworks */,
+				FA488FDA10CE21D000F30A6C /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +81,8 @@
 				FA5B7EE510CCC919009406A8 /* ListView.m */,
 				FA5B7EFB10CCCA0A009406A8 /* SettingViewController.h */,
 				FA5B7EFC10CCCA0A009406A8 /* SettingViewController.m */,
+				FA488FE110CE2AB300F30A6C /* SetPasscodeViewController.h */,
+				FA488FE210CE2AB300F30A6C /* SetPasscodeViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -106,9 +120,12 @@
 			isa = PBXGroup;
 			children = (
 				FA5B7F3010CCCD44009406A8 /* meets.png */,
-				282CCBFD0DB6C98000C4EA27 /* SecondView.xib */,
 				28AD73870D9D96C1002E5188 /* MainWindow.xib */,
+				282CCBFD0DB6C98000C4EA27 /* SecondView.xib */,
+				FA488FE310CE2AB300F30A6C /* SetPasscodeViewController.xib */,
 				8D1107310486CEB800E47090 /* Meets-Info.plist */,
+				FA488FDD10CE223500F30A6C /* Meets.xcdatamodel */,
+				FA488FFB10CE2E9400F30A6C /* icon.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -120,6 +137,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765070DF74369002DB57D /* CoreGraphics.framework */,
+				FA488FD910CE21D000F30A6C /* CoreData.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,6 +187,8 @@
 				28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */,
 				282CCBFE0DB6C98000C4EA27 /* SecondView.xib in Resources */,
 				FA5B7F3110CCCD44009406A8 /* meets.png in Resources */,
+				FA488FE510CE2AB300F30A6C /* SetPasscodeViewController.xib in Resources */,
+				FA488FFC10CE2E9400F30A6C /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +204,8 @@
 				FA5B7E8B10CC8A7A009406A8 /* NYManageBT.m in Sources */,
 				FA5B7EE610CCC919009406A8 /* ListView.m in Sources */,
 				FA5B7EFD10CCCA0A009406A8 /* SettingViewController.m in Sources */,
+				FA488FDE10CE223500F30A6C /* Meets.xcdatamodel in Sources */,
+				FA488FE410CE2AB300F30A6C /* SetPasscodeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
